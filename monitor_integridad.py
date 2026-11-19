@@ -59,7 +59,7 @@ elif args.modo == "check":
             alertas += 1
         else:
             archivos_ok += 1
-    # 2. Buscar archivos nuevos no autorizados
+
     for ruta in estado_actual:
         if ruta not in linea_base:
             print(f"[ALERTA - NUEVO] Archivo no registrado detectado: {ruta}")
